@@ -1,0 +1,325 @@
+header {
+    background-color: ffffff;
+    height: 150px;
+}
+
+.container_cab{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.posicionamento_header{
+    width: 97%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pesquisa{
+    background-color: rgb(238, 235, 235);
+    width: 250px;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#entrada{
+    background-color: rgb(238, 235, 235);
+    padding: 0 0 0 10px;
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 11pt;
+}
+
+.pesquisa img{
+    height: 15px;
+}
+
+.pesquisa img:hover{
+    height: 17px;
+}
+
+.pesquisa768{
+    display: none;
+}
+
+.menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: white;
+    background-color: rgba(190, 8, 8, 0.9);
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* --------- BANNER ---------------- */
+
+.banner{
+    max-width: 100%;
+    height: 300px;
+    background-image: url(/assets/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.container_banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.textos_banner {
+    margin: unset;
+    padding: unset;
+    width: 290px;
+    height: 130px;
+    background-color: rgba(10, 241, 21, 0.7);
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 40px 0 0 40px;
+}
+
+.textos_banner p:hover {
+    font-size: 110%;
+}
+
+/* -------- CARDS ---------- */
+
+.containergeral{
+    width: 97%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.novidade {
+    width: 23%;
+    height: 100%;
+    background-image: url(/assets/castle_off_ilusion_home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.retro {
+    width: 23%;
+    height: 100%;
+    background-image: url(/assets/street_fighter_home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.famoso {
+    width: 23%;
+    height: 100%;
+    background-image: url(/assets/Keanu_Heeves_home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.dicas {
+    width: 23%;
+    height: 100%;
+    background-image: url(/assets/gamer_lucy_home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.container {
+    height: 175px;
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.texto{ 
+    margin: unset;
+    padding: unset;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.texto p{
+    width: 250px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: "Roboto";
+    font-size: 14pt;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.texto p:hover{ 
+    background-color: yellowgreen;
+    font-size: 120%;
+}
+
+/* --------- RELACIONAMENTO ----------- */
+.container_relacionamentos{
+    width: 80%;
+    margin: unset;
+    margin: 0 auto;
+    font-family: "Roboto";
+    font-size: 14pt;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_relacionamentos img{
+    width: 120px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.container_relacionamentos img:hover{
+    width: 115px;
+}
+
+/* --------- RODAPE -----------*/
+.rodape{
+    margin: 0 auto;
+    width: 95%;
+    height: 320px;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_rodape {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_rodape a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 14pt;
+}
+
+.container_rodape a:hover{
+    color: rgb(87, 78, 78);
+}
+
+.como_chegar{
+    margin: unset;
+    width: 29%;
+    height: 80%;
+    font-family: 'Roboto';
+    font-size: 14pt;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coluna_2 {
+    width: 13%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.coluna_3 {
+    width: 15%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.coluna_4 {
+    width: 13%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.local{
+    display: none;
+}
+
+.redes_sociais{
+    width: 100%;
+    background-color: rgb(209, 212, 211);
+    border-radius: 15px;
+    padding: 5px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.redes_sociais p{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 11pt;
+    display: flex;
+    justify-content: center;
+}
+
+.redes_imagens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redes_sociais a{
+    width: 43%;
+}
+
+.redes_sociais img{
+    width: 100%;
+}
+
+.redes_sociais img:hover{
+    width: 98%;
+}
+
+.copyh{
+    font-size: 12px;
+    font-family: 'Roboto';
+    text-align: center;
+}

@@ -1,0 +1,179 @@
+<div class="container_cab posicionamento_header">
+
+    <a routerLink=""> <img class="logo" src="/assets/Logo.svg" alt="Logo do site Game Mania"></a>
+
+    <form #userForm="ngForm" (ngSubmit)="onSubmit()" class="pesquisa">
+        <a href=""><img src="/assets/seta_baixo.svg" style="margin-left: 7px;"></a>
+        <input id="entrada" type="text" name="user" placeholder="Busque no site" [(ngModel)]="userModel.user">
+        <button type="submit" style="border: none;"><img src="/assets/pesquisa.svg" style=" margin-right: 5px;"></button>
+    </form>
+
+    <nav id="menu" class="menu">
+        <a routerLink="categoria">Jogos | Categorias</a>
+        <a routerLink="categoria">Lançamentos</a>
+        <a routerLink="login">Login</a>
+        <a routerLink="game">Shop</a>
+        <a routerLink="">Meus pedidos</a>
+        <a routerLink="">Carrinho</a>
+    </nav>
+
+</div>
+
+<div class="banner">
+    <div class="container_banner">
+        <a routerLink="categoria" style="width: 70%; height: 100%; display: flex;"></a>
+        <div class="textos_banner">
+            <a routerLink="/categoria" style="text-decoration: none; color: white; font-weight: bold; text-align: center;">
+                <p>Super Mário World 3D por apenas</p>
+            </a>
+            <a routerLink="categoria" style="text-decoration: none; color: white; font-weight: bolder; font-size: 40pt;">
+                <p>129,90</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ------------- CARDS ------------------- -->
+<br>
+<br>
+
+<div class="containergeral">
+    <div class="novidade">
+        <div class="container">
+            <a routerLink="game" style="width: 50%; height: 100%; display: flex;"></a>
+            <div class="texto">
+                <a routerLink="/game" style="text-decoration: none; color: black;">
+                    <p>NOVIDADE!</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="retro">
+        <div class="container">
+            <a href="" style="width: 50%; height: 100%; display: flex;"></a>
+            <div class="texto">
+                <a href="" style="text-decoration: none; color: black;">
+                    <p>RETRÔ EM ALTA</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="famoso">
+        <div class="container">
+            <a href="" style="width: 25%; height: 100%; display: flex; "></a>
+            <div class="texto">
+                <a href="" style="text-decoration: none; color: black;">
+                    <p>TEM FAMOSO NOS GAMES</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="dicas">
+        <div class="container">
+            <a href="" style="width: 50%; height: 100%; display: flex;"></a>
+            <div class="texto">
+                <a href="" style="text-decoration: none; color: black;">
+                    <p>DICAS DA GAMER LUCY</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------- RELACIONAMENTOS ----------- -->
+<br class="espaco1">
+<br class="espaco1">
+
+<div class="container_relacionamentos">
+
+    <div class="proposito">
+        <a href="" style="font-weight: bold; text-decoration: none; color:black;">Nosso propósito</a>
+        <a href=""> <img src="/assets/nosso_proposito.png"></a>
+    </div>
+
+    <div class="cadastro">
+        <a href="" style="font-weight: bold; text-decoration: none; color:black;">Cadastre-se</a>
+        <a href=""> <img src="/assets/cadastro.png"></a>
+    </div>
+
+    <div class="pagar">
+        <a href="" style="font-weight: bold; text-decoration: none; color:black;">Como Pagar</a>
+        <a href=""> <img src="/assets/como_pagar.png"></a>
+    </div>
+
+    <div class="frete">
+        <a href="" style="font-weight: bold; text-decoration: none; color:black;">Frete</a>
+        <a href=""> <img src="/assets/frete.png"></a>
+    </div>
+
+    <div class="devolucao">
+        <a href="" style="font-weight: bold; text-decoration: none; color:black;">Devoluções</a>
+        <a href=""> <img src="/assets/devolucao.png"></a>
+    </div>
+
+    <div class="garantia">
+        <a href="" style="font-weight: bold; text-decoration: none; color:black;">Garantias</a>
+        <a href=""> <img src="/assets/garantia.png"></a>
+    </div>
+</div>
+
+<!-- ---------- RODAPE ----------- -->
+<br class="espaco1">
+<br class="espaco1">
+<footer class="rodape">
+
+<hr size="2" color="gray">
+
+
+<a href="" style="text-decoration: none;">
+    <p class="local">Como Chegar | Localização</p>
+</a>
+
+<div class="container_rodape">
+
+    <div class="como_chegar">
+        <p>Como Chegar | Localização</p>
+        <br>
+        <iframe class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14985.073962283872!2d-44.897303949999994!3d-20.1228434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1633386139315!5m2!1spt-BR!2sbr"
+            width="99%" height="81%" style="border: 2" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="coluna_2">
+        <a href="" style="font-weight: bold">Imprensa</a>
+        <a href="">Painel de vagas</a>
+        <a href="">Promoções</a>
+        <a href="">Lançamentos</a>
+        <a href="">Mais vendidos</a>
+        <a href="">frete</a>
+    </div>
+    <div class="coluna_3">
+        <a href="" style="font-weight: bold">Fale conosco</a>
+        <a href="">Ligue pra gente</a>
+        <a href="">WhatsApp</a>
+        <a href="">E-mail</a>
+        <a href="">Sobre a Game Mania</a>
+        <a href="">Visão, Missão, Valores</a>
+    </div>
+    <div class="coluna_4">
+        <a href="" style="font-weight: bold">Minha conta</a>
+        <a href="">Pagamentos</a>
+        <a href="">Acessibilidade</a>
+        <div class="redes_sociais">
+            <p style="text-align: center; ">Siga-nos nas redes sociais</p>
+             <div class="redes_imagens">
+                 <a href=""><img src="/assets/logo_instagram.png" alt="" style="padding: 5px;"></a>
+                 <a href=""><img src="/assets/logo_facebook.png" alt=""></a>
+             </div>
+        </div>
+    </div>
+</div>
+
+<hr size="2" color="gray">
+
+</footer>
+
+<br>
+<p class="copyh">Copyright 2021 - Todos os direitos reservados - CNPJ 00.000.000/0001-00 - (37) 9.9961-5536 - Rua
+Ítálo Cônsoli, 148, Bairro Alvorada, CEP 35.500-178, Divinópolis, Minas Gerais - Brasil</p>
+<br>

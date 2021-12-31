@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-align: border-box;
+}
+
+
+/* -------------- CABECALHO -------- */
+header {
+    background-color: ffffff;
+    height: 150px;
+}
+
+.container_cab{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.posicionamento_header{
+    width: 97%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pesquisa{
+    background-color: rgb(238, 235, 235);
+    width: 250px;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#entrada{
+    background-color: rgb(238, 235, 235);
+    padding: 0 0 0 10px;
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 11pt;
+}
+
+.pesquisa img{
+    height: 15px;
+}
+
+.pesquisa768{
+    display: none;
+}
+
+.menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: white;
+    background-color: rgba(190, 8, 8, 0.9);
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.sub_categoria{
+    display: none;
+}
+
+.jogos{
+    display: none;
+}
+
+.menu_sub_categoria{
+    background-color: rgba(190, 8, 8, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    width: 215px;
+    height: 230px;
+    padding: 10px;
+    padding-left: 33px;
+    position: absolute;
+    top: 96px;
+    left: 533px
+}
+
+.menu_sub_categoria a{
+    text-decoration: none;
+    color: white;
+    font-family: "roboto";
+    font-size: 18pt;
+}
+
+.menu_sub_categoria a:hover{
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 17pt;
+    border-style: solid;
+    border-color: white;
+} 
+
+.menu_jogos{
+    background-color: rgba(190, 8, 8, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    width: 320px;
+    height: 250px;
+    padding: 10px;
+    padding-left: 33px;
+    position: absolute;
+    top: 96px;
+    left: 345px;
+}
+
+.menu_jogos a{
+    text-decoration: none;
+    color: white;
+    font-family: "roboto";
+    font-size: 18pt;
+}
+
+.menu_jogos a:hover{
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 17pt;
+    border-style: solid;
+    border-color: white;
+} 
+
+.barras {
+    width: 30px;
+    display: none;
+}
+
+
+/* --------- GAME ---------------- */
+
+.titulo{
+    width: 94%;
+    height: 60px;
+    margin: 0 auto;
+    font-family: "roboto";
+    font-size: 20pt;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.cont_novidade{
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col1{
+    width: 74.4%;
+    height: 332px;
+    background-image: url(/assets/game/destaque.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col3{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "roboto";
+    font-size: 16.5pt;
+    line-height: 35px;
+    text-align: justify;
+}
+
+.col3 img{
+    width: 100%;
+}
+
+.preco{
+    width: 100%; height: 33%;
+    border-style: solid; border-color: green; border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text_preco{
+    font-family: "roboto"; font-size: 23pt; font-weight: bolder;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.botao{
+    width: 100%; height: 50%;
+    background-color: green; color: white;
+    border-radius: 18px;
+    font-size: 16pt;
+    font-family: "roboto";
+    font-weight: bolder;
+}
+
+/* -------- CARDS ---------- */
+
+.cont_cards{
+    width: 94%;
+    height: 260px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont_cards img{
+    width: 23%;
+}
+
+/* --------- RODAPE -----------*/
+.rodape{
+    margin: 0 auto;
+    width: 95%;
+    height: 320px;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_rodape {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_rodape a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 14pt;
+}
+
+.container_rodape a:hover{
+    color: rgb(87, 78, 78);
+}
+
+.como_chegar{
+    width: 29%;
+    height: 80%;
+    font-family: 'Roboto';
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.coluna_2 {
+    width: 13%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.coluna_3 {
+    width: 15%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.coluna_4 {
+    width: 13%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.coluna320px{
+    display: none;
+    
+}
+
+.redes_sociais1{
+    display: none;
+}
+
+.local{
+    display: none;
+}
+
+.redes_sociais{
+    width: 100%;
+    background-color: rgb(209, 212, 211);
+    border-radius: 15px;
+    padding: 5px 0 0 0;
+}
+
+.redes_sociais p{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 11pt;
+    display: flex;
+    justify-content: center;
+}
+
+.redes_sociais img{
+    width: 45%;
+    margin-top: 10px;
+}
+
+.redes_sociais img:hover{
+    width: 43%;
+    margin-top: 10px;
+}
+
+.copyh{
+    font-size: 12px;
+    font-family: 'Roboto';
+    text-align: center;
+}
