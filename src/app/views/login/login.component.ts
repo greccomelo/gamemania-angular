@@ -15,10 +15,12 @@ export class LoginComponent implements OnInit {
   login = [] as Login[];
 
   
-  userForm = {
-    email:"Primeiro",
-    senha:"senha"
-  }
+  // userForm = {
+  //   email:"Primeiro",
+  //   senha:"senha"
+  // }
+
+  loginModel = new Login1("brunogreccomelo@email.com", "bruno");
 
   constructor(private loginService: Login1Service) { }
 
@@ -29,9 +31,6 @@ export class LoginComponent implements OnInit {
     
     // this.carregarLogin();
   }
-
-  loginModel = new Login1();
-
 
   // carregarLogin(){
   //   this.loginService.getLogin().subscribe((loginRecebido: Login[]) => {
@@ -46,7 +45,7 @@ export class LoginComponent implements OnInit {
   //   })
   // }
 
-  userModel = new User ("","","")
+  // userModel = new User ("","","")
 
   onSubmit(){
     console.log(this.loginModel)
