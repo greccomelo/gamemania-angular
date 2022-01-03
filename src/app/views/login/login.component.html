@@ -11,14 +11,16 @@
                 <a routerLink=""> <img class="logo" src="/assets/Logo.svg" alt="Logo do site Game Mania"></a>
             </div>
 
+            <!-- formulário início -->
+
             <form #userForm="ngForm" (ngSubmit)="onSubmit()" class="container_form">
                 <div class="formulario">
 
                     <p class="titulo">LOGIN</p>
 
-                    <input id="nickname" type="text" autocomplete="on" name="nick" placeholder="Nickname ou e-mail" [(ngModel)]="userModel.nick">
+                    <input id="nickname" type="text" autocomplete="on" name="nick" placeholder="Nickname ou e-mail" [(ngModel)]="loginModel.email">
 
-                    <input id="password" type="password" name="senha" placeholder="Senha" [(ngModel)]="userModel.senha">
+                    <input id="password" type="password" name="senha" placeholder="Senha" [(ngModel)]="loginModel.password">
 
                     <div class="lembrar">
                         <div class="container_lembrar">
