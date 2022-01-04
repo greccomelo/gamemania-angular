@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Login } from 'src/app/models/login';
 import { Login1 } from 'src/app/models/login1';
 import { User } from 'src/app/models/user';
@@ -20,14 +21,16 @@ export class LoginComponent implements OnInit {
   //   senha:"senha"
   // }
 
-  loginModel = new Login1("brunogreccomelo@email.com", "bruno");
+  loginModel = new Login1("","")
 
-  constructor(private loginService: Login1Service) { }
+  mensagem = "";
+
+  constructor(private router: Router, private loginService: Login1Service) { }
 
   ngOnInit(): void {
-    this.loginService.login1(this.loginModel).subscribe((response)=>{
-      console.log(response)
-    })
+    // this.loginService.login1(this.loginModel).subscribe((response)=>{
+    //   console.log(response)
+    // })
     
     // this.carregarLogin();
   }
@@ -48,7 +51,27 @@ export class LoginComponent implements OnInit {
   // userModel = new User ("","","")
 
   onSubmit(){
-    console.log(this.loginModel)
+    
+    //black-list (contra ataques por SQL injection)
+    const listaPalavras:string[] = ["select ", "from ", "drop ", "or ", "having ", "group ", "insert ", "exec ", "\"", "\'", "--", "#", ";"];
+
+    listaPalavras.forEach(palavra => {
+      if(this.loginModel.email?.toLowerCase().includes(palavra)){
+        this.mensagem="Dados inválidos " + palavra;
+        return;
+      }
+    });
+
+      this.loginService.login1(this.loginModel).subscribe((response)=>{
+        this.mensagem = "Login realizado com sucesso!";
+        this.router.navigateByUrl("/");
+      }, (error) => {
+        if(error.status == 400){
+          this.mensagem = "Usuário ou senha inválidos!";
+        }
+        
+          // this.mensagem = error.error;
+        })
   }
 
 }

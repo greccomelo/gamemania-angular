@@ -1,9 +1,9 @@
 {
   "users": [
     {
-      "id": 1,
-      "email": "brunogreccomelo@email.com",
-      "password": "bruno"
+      "email": "enzo@email.com",
+      "password": "$2a$10$vDGaQTh1x2NYzO5Zztde.uumyZETeayKKsQITPnBIEB8zweb0MHMu",
+      "id": 1
     },
     {
       "email": "bruno@email.com",
@@ -11,9 +11,19 @@
       "id": 2
     },
     {
+      "email": "fafa@email.com",
+      "password": "$2a$10$vDGaQTh1x2NYzO5Zztde.uumyZETeayKKsQITPnBIEB8zweb0MHMu",
+      "id": 3
+    },
+    {
       "email": "fabiana@email.com",
       "password": "$2a$10$RaWR1pipN4TS/JAwiR1O..hTZ/3/ZSqHVzTUz1w6gpUbwTI5NM5kK",
       "id": 4
+    },
+    {
+      "email": "lara@email.com",
+      "password": "$2a$10$Ge1UelZjpH3Mb8CvWLhKPuKd3ui.cLo2Gb5NUP3n7LM/ONoF3sfKG",
+      "id": 5
     }
   ]
 }

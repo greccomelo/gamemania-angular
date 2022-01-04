@@ -10,6 +10,7 @@ import { LoginComponent } from './views/login/login.component';
 import { CategoriaComponent } from './views/categoria/categoria.component';
 import { GameComponent } from './views/game/game.component';
 import { FormsModule } from '@angular/forms';
+import { NotfoundComponent } from './views/notfound/notfound.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     LoginComponent,
     CategoriaComponent,
-    GameComponent
+    GameComponent,
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
