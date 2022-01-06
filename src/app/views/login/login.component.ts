@@ -16,10 +16,10 @@ export class LoginComponent implements OnInit {
   login = [] as Login[];
 
   
-  // userForm = {
-  //   email:"Primeiro",
-  //   senha:"senha"
-  // }
+  userForm = {
+    email:"Primeiro",
+    senha:"senha"
+  }
 
   loginModel = new Login1("","")
 
@@ -28,12 +28,12 @@ export class LoginComponent implements OnInit {
   constructor(private router: Router, private loginService: Login1Service) { }
 
   ngOnInit(): void {
-    // this.loginService.login1(this.loginModel).subscribe((response)=>{
-    //   console.log(response)
-    // })
+  //   this.loginService.login1(this.loginModel).subscribe((response)=>{
+  //     console.log(response)
+  //   })
     
-    // this.carregarLogin();
-  }
+  //   this.carregarLogin();
+  // }
 
   // carregarLogin(){
   //   this.loginService.getLogin().subscribe((loginRecebido: Login[]) => {
@@ -46,12 +46,12 @@ export class LoginComponent implements OnInit {
   //   this.loginService.postLogin(this.userForm).subscribe(() => {
   //     this.carregarLogin();
   //   })
-  // }
+  }
 
   // userModel = new User ("","","")
 
   onSubmit(){
-    
+
     //black-list (contra ataques por SQL injection)
     const listaPalavras:string[] = ["select ", "from ", "drop ", "or ", "having ", "group ", "insert ", "exec ", "\"", "\'", "--", "#", ";"];
 

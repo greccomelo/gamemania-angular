@@ -2,11 +2,17 @@
 
     <a routerLink=""> <img class="logo" src="/assets/Logo.svg" alt="Logo do site Game Mania"></a>
 
-    <form #userForm="ngForm" (ngSubmit)="onSubmit()" class="pesquisa">
+    <form class="pesquisa">
+        <a href=""><img src="/assets/seta_baixo.svg" style="margin-left: 7px;"></a>
+        <input id="entrada" type="text" name="user" placeholder="Busque no site">
+        <button type="submit" style="border: none;"><img src="/assets/pesquisa.svg" style=" margin-right: 5px;"></button>
+    </form>
+    
+    <!-- <form #userForm="ngForm" (ngSubmit)="onSubmit()" class="pesquisa">
         <a href=""><img src="/assets/seta_baixo.svg" style="margin-left: 7px;"></a>
         <input id="entrada" type="text" name="user" placeholder="Busque no site" [(ngModel)]="userModel.user">
         <button type="submit" style="border: none;"><img src="/assets/pesquisa.svg" style=" margin-right: 5px;"></button>
-    </form>
+    </form> -->
 
     <nav id="menu" class="menu">
         <a routerLink="categoria">Jogos | Categorias</a>
@@ -116,6 +122,14 @@
         <a href=""> <img src="/assets/garantia.png"></a>
     </div>
 </div>
+<br class="espaco1">
+<br class="espaco1">
+<section class="noticias">
+    <div *ngFor="let noticia of listaNoticias" class="cartao">
+        <h1>{{ noticias.titulo }}</h1>
+        <p>{{ noticias.conteudo }}</p>
+    </div>     
+</section>
 
 <!-- ---------- RODAPE ----------- -->
 <br class="espaco1">

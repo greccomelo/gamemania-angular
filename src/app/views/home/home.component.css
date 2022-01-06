@@ -210,6 +210,25 @@ header {
     width: 115px;
 }
 
+/* NOTICIAS SEÇÃO */
+
+.noticias{
+    display: flex;
+    justify-content: center;
+    background-color: honeydew;
+}
+
+.cartao{
+    margin: unset;
+    text-align: center;
+}
+
+.cartao h1{
+    margin: unset;
+    margin-top: 12px;
+    text-align: center;
+}
+
 /* --------- RODAPE -----------*/
 .rodape{
     margin: 0 auto;

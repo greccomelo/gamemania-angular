@@ -25,5 +25,17 @@
       "password": "$2a$10$Ge1UelZjpH3Mb8CvWLhKPuKd3ui.cLo2Gb5NUP3n7LM/ONoF3sfKG",
       "id": 5
     }
+  ],
+  "noticias": [
+    {
+      "titulo": "Novidade",
+      "conteudo": "Novo jogo da Sega",
+      "id": 1
+    },
+    {
+      "titulo": "Barato",
+      "conteudo": "Melhores preços da cidade",
+      "id": 2
+    }
   ]
 }
