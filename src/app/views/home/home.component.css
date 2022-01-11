@@ -213,20 +213,27 @@ header {
 /* NOTICIAS SEÇÃO */
 
 .noticias{
+    margin: 0 auto;
+    width: 95%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: honeydew;
 }
 
 .cartao{
-    margin: unset;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: center;
+    font-family: "Roboto";
+
 }
 
-.cartao h1{
-    margin: unset;
+.cartao h2{
     margin-top: 12px;
+    margin-bottom: unset;
     text-align: center;
+    font-weight: bold;
 }
 
 /* --------- RODAPE -----------*/

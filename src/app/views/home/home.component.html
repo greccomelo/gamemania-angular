@@ -124,10 +124,13 @@
 </div>
 <br class="espaco1">
 <br class="espaco1">
+
+<!-- ----------- seção noticias ----------------------- -->
+
 <section class="noticias">
     <div *ngFor="let noticia of listaNoticias" class="cartao">
-        <h1>{{ noticias.titulo }}</h1>
-        <p>{{ noticias.conteudo }}</p>
+        <h2>{{ noticia.titulo }}</h2>
+        <p>{{ noticia.conteudo }}</p>
     </div>     
 </section>
 

@@ -28,14 +28,24 @@
   ],
   "noticias": [
     {
-      "titulo": "Novidade",
+      "titulo": ":: NOVIDADES ::",
       "conteudo": "Novo jogo da Sega",
       "id": 1
     },
     {
-      "titulo": "Barato",
+      "titulo": ":: BARATO ::",
       "conteudo": "Melhores preços da cidade",
       "id": 2
+    },
+    {
+      "titulo": ":: MICKEY MOUSE ::",
+      "conteudo": "Em Moscou!",
+      "id": 3
+    },
+    {
+      "titulo": ":: NOVO CONSOLE DA NINTENDO ::",
+      "conteudo": "5G já é realidade neste valente console",
+      "id": 4
     }
   ]
 }
